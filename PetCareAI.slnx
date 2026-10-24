@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/PetCareAI.API/PetCareAI.API.csproj" />
+    <Project Path="src/PetCareAI.Application/PetCareAI.Application.csproj" />
+    <Project Path="src/PetCareAI.Domain/PetCareAI.Domain.csproj" />
+    <Project Path="src/PetCareAI.Infrastructure/PetCareAI.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/PetCareAI.Application.Tests/PetCareAI.Application.Tests.csproj" />
+    <Project Path="tests/PetCareAI.Domain.Tests/PetCareAI.Domain.Tests.csproj" />
+    <Project Path="tests/PetCareAI.Integration.Tests/PetCareAI.Integration.Tests.csproj" />
+  </Folder>
+</Solution>
