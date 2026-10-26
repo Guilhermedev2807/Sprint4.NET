@@ -1,0 +1,24 @@
+services:
+  oracle:
+    image: gvenzl/oracle-free:23-slim
+    container_name: petcare-oracle
+    ports:
+      - "1521:1521"
+    environment:
+      ORACLE_PASSWORD: Oracle123
+      APP_USER: petcare
+      APP_USER_PASSWORD: PetCare123
+    volumes:
+      - oracle-data:/opt/oracle/oradata
+
+  mongo:
+    image: mongo:7
+    container_name: petcare-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  oracle-data:
+  mongo-data:

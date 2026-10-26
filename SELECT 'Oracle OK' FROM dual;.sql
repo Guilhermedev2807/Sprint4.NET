@@ -1,0 +1,1 @@
+SELECT 'Oracle OK' FROM dual;
