@@ -1,6 +1,9 @@
+using PetCareAI.Application;
 using PetCareAI.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
 
 // Add services to the container.
