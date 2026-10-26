@@ -20,4 +20,9 @@
     <Using Include="Xunit" />
   </ItemGroup>
 
+    <ItemGroup>
+    <ProjectReference Include="..\..\src\PetCareAI.Application\PetCareAI.Application.csproj" />
+    <ProjectReference Include="..\..\src\PetCareAI.Domain\PetCareAI.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

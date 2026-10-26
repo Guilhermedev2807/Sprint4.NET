@@ -17,4 +17,9 @@
     <PackageReference Include="Oracle.EntityFrameworkCore" Version="10.23.26400" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PetCareAI.Domain\PetCareAI.Domain.csproj" />
+    <ProjectReference Include="..\PetCareAI.Application\PetCareAI.Application.csproj" />
+  </ItemGroup>
+  
 </Project>
