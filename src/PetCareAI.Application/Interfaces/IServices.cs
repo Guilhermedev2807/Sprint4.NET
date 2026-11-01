@@ -17,3 +17,21 @@ public interface IPetService
     Task<PetResponseDto> AtualizarAsync(Guid id, Guid userId, PetRequestDto dto);
     Task RemoverAsync(Guid id, Guid userId);
 }
+
+public interface IConsultaService
+{
+    Task<PagedResult<ConsultaResponseDto>> ListarAsync(Guid userId, ConsultaQueryParams query);
+    Task<ConsultaResponseDto> ObterAsync(Guid id, Guid userId);
+    Task<ConsultaResponseDto> CriarAsync(Guid userId, ConsultaRequestDto dto);
+    Task<ConsultaResponseDto> AtualizarAsync(Guid id, Guid userId, ConsultaRequestDto dto);
+    Task RemoverAsync(Guid id, Guid userId);
+}
+
+public interface IVacinaService
+{
+    Task<PagedResult<VacinaResponseDto>> ListarAsync(Guid userId, VacinaQueryParams query);
+    Task<VacinaResponseDto> ObterAsync(Guid id, Guid userId);
+    Task<VacinaResponseDto> CriarAsync(Guid userId, VacinaRequestDto dto);
+    Task<VacinaResponseDto> AtualizarAsync(Guid id, Guid userId, VacinaRequestDto dto);
+    Task RemoverAsync(Guid id, Guid userId);
+}

@@ -34,3 +34,21 @@ public class PetRequestValidator : AbstractValidator<PetRequestDto>
             .WithMessage("Data de nascimento não pode ser futura.");
     }
 }
+public class ConsultaRequestValidator : AbstractValidator<ConsultaRequestDto>
+{
+    public ConsultaRequestValidator()
+    {
+        RuleFor(x => x.PetId).NotEmpty();
+        RuleFor(x => x.Veterinario).NotEmpty().MaximumLength(120);
+        RuleFor(x => x.Motivo).NotEmpty().MaximumLength(300);
+    }
+}
+
+public class VacinaRequestValidator : AbstractValidator<VacinaRequestDto>
+{
+    public VacinaRequestValidator()
+    {
+        RuleFor(x => x.PetId).NotEmpty();
+        RuleFor(x => x.Nome).NotEmpty().MaximumLength(120);
+    }
+}
