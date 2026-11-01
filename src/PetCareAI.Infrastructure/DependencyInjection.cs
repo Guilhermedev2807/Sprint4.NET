@@ -2,10 +2,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MongoDB.Driver;
+using PetCareAI.Application.Interfaces;
 using PetCareAI.Domain.Interfaces;
 using PetCareAI.Infrastructure.Mongo;
 using PetCareAI.Infrastructure.Persistence;
 using PetCareAI.Infrastructure.Repositories;
+using PetCareAI.Infrastructure.Security;
 
 namespace PetCareAI.Infrastructure;
 
@@ -21,6 +23,9 @@ public static class DependencyInjection
         services.AddScoped<IConsultaRepository, ConsultaRepository>();
         services.AddScoped<IVacinaRepository, VacinaRepository>();
         services.AddScoped<IAuditLogRepository, MongoAuditLogRepository>();
+
+        services.AddScoped<ITokenService, JwtTokenService>();
+        services.AddScoped<IPasswordHasher, BCryptPasswordHasher>();
 
         return services;
     }
