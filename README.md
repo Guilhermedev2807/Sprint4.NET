@@ -2,6 +2,8 @@
 
 API RESTful em **.NET 10** para tutores acompanharem a vida dos seus pets: cadastro de pets, agendamento de consultas e controle da carteira de vacinas. Projeto da disciplina **Advanced Business Development with .NET** (FIAP) — 4ª Sprint.
 
+🔗 **Repositório:** <https://github.com/Guilhermedev2807/Sprint4.NET>
+
 ## Sumário
 
 1. [Visão geral](#visão-geral)
@@ -200,8 +202,8 @@ Para autenticar: faça `POST /api/auth/login`, copie o `token`, clique em **Auth
 
 ```bash
 # 1. Clonar
-git clone <URL-DO-REPOSITORIO>
-cd PetCareAI
+git clone https://github.com/Guilhermedev2807/Sprint4.NET.git
+cd Sprint4.NET
 
 # 2. Subir Oracle e MongoDB
 docker compose up -d
