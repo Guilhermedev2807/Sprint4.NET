@@ -341,7 +341,10 @@ PetCareAI/
 
 | Nome | RM |
 |---|---|
-| Guilherme de Andrade Martini | _preencher_ |
+| Guilherme de Andrade Martini | RM566087 |
+| Raphael Gomes Mancera | RM562279 |
+| Bruno Vinicius Barbosa | RM566366 |
+| Nathan Gonçalves Pereira Mendes | RM564666 |
 
 ---
 
