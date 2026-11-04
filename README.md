@@ -251,15 +251,15 @@ Credenciais do `docker-compose.yml`: Oracle `petcare` / `PetCare123` (serviço `
 dotnet test
 ```
 
-São **27 testes** (padrão **AAA**, xUnit), que não dependem do Docker:
+São **47 testes** (padrão **AAA**, xUnit), que não dependem do Docker:
 
 | Projeto | Tipo | O que cobre |
 |---|---|---|
 | `PetCareAI.Domain.Tests` | Unitários | Regras de `Pet`, `Usuario`, `Consulta` e `Vacina` |
-| `PetCareAI.Application.Tests` | Unitários (Moq) | `AuthService` e `PetService`: sucesso, validação, não encontrado, conflito, não autorizado |
+| `PetCareAI.Application.Tests` | Unitários (Moq) | `AuthService`, `PetService`, `ConsultaService` e `VacinaService`: sucesso, validação, regra de domínio, não encontrado, conflito, não autorizado e auditoria |
 | `PetCareAI.Integration.Tests` | Integração (`WebApplicationFactory`, banco InMemory) | Registro, login, 401 sem token, 409 e-mail duplicado, 400 validação, CRUD de pet com token e isolamento por usuário |
 
-Cobertura (Coverlet):
+Cobertura (Coverlet) das camadas de Domínio e Aplicação:
 
 ```bash
 dotnet test --collect:"XPlat Code Coverage"
